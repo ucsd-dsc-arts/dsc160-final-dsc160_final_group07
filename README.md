@@ -33,9 +33,9 @@ We will be using the idea of GANs covered in class. We will create a generator f
 
 This is culturally interesting because since we are sourcing our images from the top query results, the final image will likely represent many facets of how our culture defines that word. We could expect a word such as “bat” to turn up some kind of combination of the weapon and animal, and could learn a lot about the defining images our culture considers when searching for a location (for example, a search for San Francisco will likely produce the golden gate bridge, not the tenderloin).
 
-https://www.shvembldr.com/ - An interactive generative art piece created using computer algorithms and random seed as well as user input.
-https://www.artbreeder.com/ - A GAN that breeds two images to create novel new ones using GANBreeder.
-https://runwayml.com/ - An easy, code-free tool that makes it simple to experiment with machine learning models in creative ways.
+- https://www.shvembldr.com/ - An interactive generative art piece created using computer algorithms and random seed as well as user input.
+- https://www.artbreeder.com/ - A GAN that breeds two images to create novel new ones using GANBreeder.
+- https://runwayml.com/ - An easy, code-free tool that makes it simple to experiment with machine learning models in creative ways.
 
 
 ## Data and Model

@@ -12,26 +12,27 @@ Project Team Members:
 ## Abstract
 
 (10 points) 
+According to a recent study, in 18 major museums, 85% of the artists were white and 87% of artists were female. African American artists only had 1.2% of their paintings in these museums. While LatinX and Hispanic artists had just 2.8% of the paintings in the museums. Given that art is a field that has been around for thousands of years, this was quite surpring to learn about. We wanted to help reduce the gap between lesser represented communities in art. To do that we created some generative art for 10 prominent African American artists. 
 
-Our concept is to create a generative image from any query a user inputs by scraping the top 50 results for that query from an engine such as Google Images. Next, we will use these images in our model (GAN) to create something that accurately depicts the words/phrases entered in the search engine. For instance, if we entered the phrase “Green Birds Flying” or “Bay Area” we would obtain the top 50 images from google images, web scrape them, and then fit them in our model, and then produce an all encompassing image that has been generated based on the training images passed in. We will then be able to create a gallery of our results on a website for different words and phrases. We are hoping to capture multiple ideas and items within one photo; an example of this would pertain to culture. Culture itself can often be very complex and have various aspects to it such as people, food, country of origin, habits, hobbies, etc. We will attempt to capture something that has this level of granularity into one condensed image (stretch goal). 
+
+We obtained paintings for different African American artists using wikiart. Next, we used these images to train a model (GAN) to create images that accurately depicts the different artwork of a given artist. We created a gallery of our results on a website for 10 different African American artists. We are hoping to capture general trends that are common to African American artists and capture multiple ideas and items within the artwork we scraped for an artist
 
 
 We will be using Generative adversarial networks (GAN) to help generate the images. As of now, we are still actively conducting research to determine what other approaches we can take to accomplish this task (and examine how others have achieved a similar result). As of now, we have been reading through the implementation posted here on the CIFAR10 dataset.  https://machinelearningmastery.com/how-to-develop-a-generative-adversarial-network-for-a-cifar-10-small-object-photographs-from-scratch/
 
-Please let us know if you have any guidance or suggestions as to how we can best approach this problem. 
-
-We will build a web scraper to download the top 50 results from an input query string. The training data will be formatted as jpegs. 
+We will use wikiart to scrape images for 10 different African American artists. We aimed to get 20 images per artists. The training data will be formatted as jpegs and resized so that all images are of the same dimension. 
 
 
-We hope that the final image will be a good representation of the different search results. This will almost be like a summary image of the keyword entered by the user. This will take the complexity of multiple different images and simplify it down to one image for the user to view. 
+We hope that the final image will be a good representation of the different artists. This will almost be like a summary image to represent the artist. This will take the complexity of multiple different images and simplify it down to one image for the user to view. 
 
-Website - we will have a gallery of different keywords and the respective generative images. We will also give the user the option to create a generative image real time. They will enter their search query into a textbox and we will do the web scraping and generate the representative image.
+Website - we will have a gallery of different African American artists and the respective generative images. 
 
-The first challenge that will arise is attempting to scrape Google image search results to get the images that are received. This will involve having queries for different keywords or keyphrases which may be difficult to achieve and the scraping of the results of these queries may be computationally expensive. Moreover, we will have to download these images in mass quantities for the various generative art pieces and the downloading of the image results may take an extensive amount of space so we will have to make sure these are converted properly and stored on the server in an efficient manner. Additionally, another challenge will be the implementing a GAN model that will create new images off the original image data. These original images may be different sizes and resolution so there may be some preprocessing before inputting the images into the model. 
+The first challenge that we faced was attempting to scrape artwork of African American artists. There were far fewer paintings on wikiart of African American artists than White artists. 
+
+Additionally, another challenge will be the implementing a GAN model that will create new images off the original image data. These original images may be different sizes and resolution so there may be some preprocessing before inputting the images into the model. 
 
 We will be using the idea of GANs covered in class. We will create a generator from latent vectors (code) to visual outputs. 
-
-This is culturally interesting because since we are sourcing our images from the top query results, the final image will likely represent many facets of how our culture defines that word. We could expect a word such as “bat” to turn up some kind of combination of the weapon and animal, and could learn a lot about the defining images our culture considers when searching for a location (for example, a search for San Francisco will likely produce the golden gate bridge, not the tenderloin).
+This is culturally important because African American artists are currently underrepresented in the generative art field and we would like to help change this. 
 
 - https://www.shvembldr.com/ - An interactive generative art piece created using computer algorithms and random seed as well as user input.
 - https://www.artbreeder.com/ - A GAN that breeds two images to create novel new ones using GANBreeder.
@@ -41,6 +42,28 @@ This is culturally interesting because since we are sourcing our images from the
 ## Data and Model
 
 (10 points) 
+
+For our project we decided to use wikiart to get paintings of artists. We scraped paintings for 10 prominent African American artists. It was surprisingly difficuly to compile a dataset of paintings for some African American artists because wikiart did not have as in depth a repository for African American artists as they did for other white artists. We finally scraped 20 paintings for each of the following artists: 
+1) Jacob Lawrence
+2) Aaron Doughlas
+3) Clementine Hunter
+4) Jean-Michel Basquiat
+5) Kerry James Marshall
+6) Romare Bearden
+7) Alma Woodsey Thomas
+8) David Hammons
+9) Henry-Ossawa-Tanner
+10) William-H-Johnson
+
+We had to ensure that all images scraped were of the same size and format in order to create our training set. 
+
+
+
+
+
+
+
+
 
 In the final submission, this section will describe both the data you use for this project and any pre-existing models/neural nets. For each you should provide the name, a textual description, and a link. If there is a paper (for neural net) link that as well.
 - Such and such Neural Net. The short description of this neural net. 
@@ -82,7 +105,13 @@ The subsequent paragraphs could address questions including:
 - How does your generative computational approach differ from traditional art/music/cultural production? 
 - How do your results relate to broader social, cultural, economic political, etc., issues? 
 - What are the ethical concerns for this form of generative art? 
+
+There are large ethical concerns with our project. This is a current and sensitive topic to people all around the world. 
+
 - In what future directions could you expand this work?
+
+In the future we would like to include more African American artists paintings to create generative art and more paintings per artist. Further, we would like to represent other less represented communities in the generative arts field as well like Hispanic and LatinX artist. Further, it would be interesting to include different forms of art like scultures and other digital art, rather than just oil paintings from wikiart. This will make our dataset more diverse and allow us to generate better images. 
+Further, we would like to analyse trends we see in the generative art of African American artists and see if those similar trends exist in White artists. It will be interesting to see if white artists have similar trends in their artwork, but are better represented in museums etc. 
 
 ## Team Roles
 
@@ -101,3 +130,4 @@ All references to papers, techniques, previous work, repositories you used shoul
 - Papers
 - Repositories
 - Blog posts
+https://hyperallergic.com/501999/artists-in-18-major-us-museums-are-85-white-and-87-male-study-says/

@@ -115,9 +115,10 @@ This python file contains all of the code necessary to create the discriminator 
 [Website Gallery](https://sites.google.com/view/racialbiasingenerativeart/art-gallery?authuser=0)
 For our results we will be discussing and analysing a few of the images of the later epochs in both our small dataset (50,000 epochs, batch size 32, small_dataset.zip) and our complete dataset (150,000 epochs, batch size 64, 538 images)
 
-We will first discuss two of the generative art samples that we obtained in the later samples of our small dataset. Both of these epochs fall within the range of 35,000 - 50,000 epochs. 
 
 ### Small Dataset
+
+We will first discuss two of the generative art samples that we obtained in the later samples of our small dataset. Both of these epochs fall within the range of 35,000 - 50,000 epochs. 
 
 ![](results/small_dataset_1.png)
 
@@ -129,7 +130,11 @@ In this second epoch we can see elements of an outside meadow (image in the uppe
 
 ### Large Dataset
 
+We will now look at 4 of the examples we obtained from scalling up our model and running our full dataset onn 150,000 ephocs on a batch size of 64. These images come from the later ephocs rangin from 120,000 - 150,000 epochs. 
+
 ![](results/all_dataset_1.png)
+We found this epoch to be particularly interesting due to the image produced in the 2nd column, 4th row. This image depicts what appears to be a face with two eyes, and ear, and hair around the head (bald on the top). Some of our group members interpreted this face looking over a city like structure while others believed that the part underneath the face was to be the mans shoulders. Additionally, the image in the 5th column and 1st row showed of some of the many bright colors we mentioned earlier. in addition to this, we began noticing a pattern of seeing solid color figures appear on a white/tan background with little noise. This was another difference that we began to notice in comparison to other forms of generative artwork trained on more European or "unbias" datasets. We often see figures appear in backgrounds that have more noise involved (such as trees, nature, etc.) in European generative art models - here we see very little of that. 
+
 ![](results/all_dataset_3.png)
 ![](results/all_dataset_4.png)
 ![](results/trained-294.png)

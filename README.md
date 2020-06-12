@@ -162,9 +162,13 @@ While our results varied greatly, certain styles were clearly visible, such as J
 
 Our results relate to the current movement for black voices to be heard, and to the movement raising awareness for their suppression. Through these results, it is clear to see that more traditionally western generative art projects are VERY different than the results we produced, facilitating the realization that African artists and their styles have gone unseen in the generative art world. As discussed above, our generative art created images with much more color than traditional projects; the fact that these colors and bright themes are so often missing from generative art reveal that African artists are often missing from analyses.
 
-In the future we would like to include more African American artists' paintings to create generative art and more paintings per artist. Further, we would like to represent other less represented communities in the generative arts field as well like Hispanic and LatinX artist. Further, it would be interesting to include different forms of art like sculptures and other digital art, rather than just oil paintings from wikiart. This would make our dataset more diverse and allow us to generate better images. 
+In the future we would like to include more African American artists' paintings to create generative art and more paintings per artist. Further, we would like to represent other less represented communities in the generative arts field as well as Hispanic and LatinX artist. Further, it would be interesting to include different forms of art like sculptures and other digital art, rather than just oil paintings from wikiart. This would make our dataset more diverse and allow us to generate better images. 
 
 Further, we would like to analyze trends we see in the generative art of African American artists and see if similar trends exist in White artists. It would be interesting to analyze whether white artists have similar trends in their artwork, but are better represented in museums etc.
+
+## Beyond the Classroom
+
+After learning about and exposing the biases in generative art we believe it is our duty to expose and raise awareness to the imbalances and inherent bias it comes when constructing a dataset to represent different cultures. The stakes for this particular issue in data science are high; with various technologies such as facial recognition, speech recognition, generative modeling, etc. it is crucial that we create datasets that are all encompassing and all inclusive. Fortunately, the field of data science and generative art are still in their early youth - it will be our job as the educators to raise awareness, expose, and reform the system of creating fair datasets in the field of data science. 
 
 ## Team Roles
 

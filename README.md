@@ -112,6 +112,16 @@ This python file contains all of the code necessary to create the discriminator 
 
 (30 points) 
 
+![](results/all_dataset_1.png)
+![](results/all_dataset_2.png)
+![](results/all_dataset_3.png)
+![](results/all_dataset_4.png)
+![](results/trained-294.png)
+![](results/small_dataset_1.png)
+![](results/small_dataset_2.png)
+
+
+
 This section should summarize your results and will embed links to documentation to significant outputs. This should document both process and show artistic results. This can include figures, sound files, videos, bitmaps, as appropriate to your generative art idea. Each result should include a brief textual description, and all should be listed below: 
 
 - image files (`.jpg`, `.png` or whatever else is appropriate)

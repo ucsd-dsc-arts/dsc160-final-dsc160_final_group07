@@ -43,6 +43,7 @@ This is culturally important because African American artists are currently unde
 
 (10 points) 
 
+# Data Ingestion
 For our project we decided to use [WikiArt](https://www.wikiart.org/) to get paintings of artists. We scraped paintings for 10 prominent African American artists. We wanted to note that even within WikiArt there was an inherent bias when we were trying to select the works of these artists. Many of their paintings were not in the encyclopedia and also there were many artists that we wanted to include like Kara Walker and Faith Ringgold who did not have any work on WikiArt. This is one of the inherent basis that we were faced with when building our dataset; we were constrained to the artwork represented in WikiArt with it being increasingly difficult to find various African American artists. However, we still were able to compile 536 works of art for us to train a GAN on in order to create our generative art. In order to collect this data, we scraped the WikiArt website and stored all the paintings as either jpeg or png files in a directory for each artist so they could be sampled by artist later. We explored some of the most influential African American artists throughout history. Below are the ten artists that we chose (base on popularity, influence, and contribution) to create our dataset from. 
 
 
@@ -59,9 +60,13 @@ For our project we decided to use [WikiArt](https://www.wikiart.org/) to get pai
 
 More in depth descriptions of these artists can be found on our website [here](https://sites.google.com/view/racialbiasingenerativeart/home?authuser=0)
 
+# Data Preprocessing
+
 We used some of the techniques we learned in Exercise 1 to scrape and save all the images for each of the 10 artists we selected. We had a total of 536 pieces of artwork to train our model on; However, prior to training our model we had to ensure that all the images were the same size for when we fed them into our neural network. 
 
 In order to feed the information into a GAN, we needed to first get the various images into the appropriate format and sizing and create our training datasets. Because the images were saved in various image formats, we needed to make sure the images were processed to be the same format. This meant that when we converted the images into a matrix of numbers representing each pixel in the image, we had to convert them into the 'RGB' image format. This means there are 3 matrices, each with a pixel value for the 3 channels of color (Red, Green and Blue). Additionally, we also had to resize the images to be 128x128 pixels. This helps in making the GAN run faster because the image sizes are smaller and also makes sure they are all the same uniform pixel count. These image matrices are then all added to a list and then saved to disk so that the training data can be fed into the GAN.
+
+# Model Creation
 
 To train our model on our dataset we made use of a platform known as Spell. Spell is a MLOps platform that is optimized for machine learning and deep learning. The servers and hardware are hosted by AWS which makes running our models both scalable and easy. Additionally, we wanted to use a service that would allow us have more variety for hardware specifications and was reliable. Our final model consisted of 150,000 epochs on a batch size of 64 across our entire dataset of 536 images; we ran our final model on a single V100 machine taking a little over 19 hours to complete. Below are 2 screenshots showing our epochs and machine usage. 
 
@@ -74,6 +79,18 @@ The link to the spell platform we used for this project can be found [here](http
 
 *Note: Our group was able to obtain $95 of free credit on one of our accounts by referring the other members and having them sign up ($15 per referral for both parties). Additionally, we used a one time promo code to obtain $10 credit. This could be a potential alternative for next quarter for students who continue to have issues with the DSMLP servers. 
 A full gallery of some of the generative art we created can be found in the gallery section of our website [here](https://sites.google.com/view/racialbiasingenerativeart/art-gallery?authuser=0)
+
+We have included 2 forms of training data in our repository. Unforitnatly, the full dataset was too large to inlcude in our repository so we have included two smaller forms that we have used for the initial models instead. 
+
+# Training Data
+
+[same_num_dataset.zip](data/same_num_dataset.zip) - This dataset included a total of 100 peices of artwor from WikiArt; we decided to randomly sample 10 peices of artwork from each artist 
+
+[small_dataset.zip](data/small_dataset.zip) - This dataset included a total of 186 peices of artwor from WikiArt; we decided to randomly sample 20 peices of artwork from each artist. It is important to note that some artists did not have 20 images or more so we would just obtain all the images they had in this case. 
+
+# References
+
+Our group used similar ideas and generation techniques found in the article [here](https://towardsdatascience.com/generating-modern-arts-using-generative-adversarial-network-gan-on-spell-39f67f83c7b4). The code that we followed is also included in this link as well. 
 
 
 In the final submission, this section will describe both the data you use for this project and any pre-existing models/neural nets. For each you should provide the name, a textual description, and a link. If there is a paper (for neural net) link that as well.

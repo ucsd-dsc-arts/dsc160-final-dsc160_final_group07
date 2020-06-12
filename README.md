@@ -44,16 +44,18 @@ This is culturally important because African American artists are currently unde
 (10 points) 
 
 For our project we decided to use wikiart to get paintings of artists. We scraped paintings for 10 prominent African American artists. It was surprisingly difficult to compile a dataset of paintings for some African American artists because wikiart did not have as in depth a repository for African American artists as they did for other white artists. This is one of the inherent basis that we were faced with when building our dataset; we were constrained to the artwork represented in wikiart with it being increasingly difficult to find various African American artists. We explored some of the most influential African American artists throughout history. Below are the ten artists that we chose (base on popularity, influence, and contribution) to create our dataset from. 
-Jacob Lawrence
-Aaron Doughlas
-Clementine Hunter
-Jean-Michel Basquiat
-Kerry James Marshall
-Romare Bearden
-Alma Woodsey Thomas
-David Hammons
-Henry-Ossawa-Tanner
-William-H-Johnson
+
+1. Jacob Lawrence
+2. Aaron Doughlas
+3. Clementine Hunter
+4. Jean-Michel Basquiat
+5. Kerry James Marshall
+6. Romare Bearden
+7. Alma Woodsey Thomas
+8. David Hammons
+9. Henry-Ossawa-Tanner
+10. William-H-Johnson
+
 We used some of the techniques we learned in Exercise 1 to scrape and save all the images for each of the 10 artists we selected. We had a total of 538 pieces of artwork to train our model on; However, prior to training our model we had to ensure that all the images were the same size for when we fed them into our neural network. 
 
 In order to feed the information into a GAN, we needed to first get the various images into the appropriate format and sizing and create our training datasets. Because the images were saved in various image formats, we needed to make sure the images were processed to be the same format. This meant that when we converted the images into a matrix of numbers representing each pixel in the image, we had to convert them into the 'RGB' image format. This means there are 3 matrices, each with a pixel value for the 3 channels of color (Red, Green and Blue). Additionally, we also had to resize the images to be 128x128 pixels. This helps in making the GAN run faster because the image sizes are smaller and also makes sure they are all the same uniform pixel count. These image matrices are then all added to a list and then saved to disk so that the training data can be fed into the GAN.

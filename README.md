@@ -13,7 +13,8 @@ Project Team Members:
 
 ## Abstract
 
-(10 points) 
+(10 points)
+
 According to a recent study, in 18 major museums, 85% of the artists were white and 87% of artists were female. African American artists only had 1.2% of their paintings in these museums. While LatinX and Hispanic artists had just 2.8% of the paintings in the museums. Given that art is a field that has been around for thousands of years, this was quite surpring to learn about. We wanted to help reduce the gap between lesser represented communities in art. To do that we created some generative art for 10 prominent African American artists. 
 
 
@@ -47,7 +48,6 @@ This is culturally important because African American artists are currently unde
 
 ### Data Ingestion
 For our project we decided to use [WikiArt](https://www.wikiart.org/) to get paintings of artists. We scraped paintings for 10 prominent African American artists. We wanted to note that even within WikiArt there was an inherent bias when we were trying to select the works of these artists. Many of their paintings were not in the encyclopedia and also there were many artists that we wanted to include like Kara Walker and Faith Ringgold who did not have any work on WikiArt. This is one of the inherent basis that we were faced with when building our dataset; we were constrained to the artwork represented in WikiArt with it being increasingly difficult to find various African American artists. However, we still were able to compile 538 works of art for us to train a GAN on in order to create our generative art. In order to collect this data, we scraped the WikiArt website and stored all the paintings as either jpeg or png files in a directory for each artist so they could be sampled by artist later. We explored some of the most influential African American artists throughout history. Below are the ten artists that we chose (base on popularity, influence, and contribution) to create our dataset from. 
-
 
 1. Jacob Lawrence
 2. Aaron Doughlas
@@ -110,10 +110,21 @@ This python file contains all of the code necessary to create the discriminator 
 
 ## Results
 
-(30 points) 
+(30 points)
+
+[Website Gallery](https://sites.google.com/view/racialbiasingenerativeart/art-gallery?authuser=0)
+For our results we will be discussing and analysing a few of the images of the later epochs in both our small dataset (50,000 epochs, batch size 32, small_dataset.zip) and our complete dataset (150,000 epochs, batch size 64, 538 images)
+
+We will first discuss two of the generative art samples that we obtained in the later samples of our small dataset. Both of these epochs fall within the range of 35,000 - 50,000 epochs. 
 
 ![](results/all_dataset_1.png)
+
+In this first image we can see images that include a variety of vibrant colors. When juxtaposing the generative artwork in just the African American dataset this was perhaps the most stark difference. The use of bright colors that "pop" in the images truly set the images appart from traditional generative art examples we found online that included more European artworks. Additionally, we can see another type of image on a white/tan background with what appears to be figures of people standing still. The person on the left appears to be knelling with his arms extended outward and the person on the right appears to be examining something in the arms of the other person. In many of the artworks that we trained on, images of humans typically appeared in a similar style; these training images sometimes depicted figures with simple designs that appeared to be the focal point of the image. Moreover, the sharp contrast in bright colors would direct the viewers eye to these figures first. 
+
 ![](results/all_dataset_2.png)
+
+In this second epoch we can see elements of an outside meadow (image in the upper left corner). The image depicts what appears to be a blue sky with a green grassy ground next to a brown cannon. This image to us resembled something that was more scenic and calm like some of the images we viewed in our training set. Additionally, the image in the 3rd column, 2nd row resembles a woven pattern similar to a quilt. This particular image appears to draw inspiration from some of Alma Woodsey Thomas’s artwork. Her artwork is very unique and uses a grid like structure with bright colors to paint various patterns and senes from nature. 
+
 ![](results/all_dataset_3.png)
 ![](results/all_dataset_4.png)
 ![](results/trained-294.png)

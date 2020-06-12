@@ -1,4 +1,4 @@
-# Project Title
+# Racial Bias in Generative Art
 
 DSC160 Data Science and the Arts - Final Project - Generative Arts - Spring 2020
 
@@ -84,9 +84,11 @@ In the final submission, this section will describe both the data you use for th
 (20 points)
 
 Data Collection/Preprocessing - [scrape_art.ipynb](https://github.com/ucsd-dsc-arts/dsc160-final-dsc160_final_group07/blob/master/code/scrape_art.ipynb)
+
 This notebook contains all the functions and code in order to scrape the paintings from WikiArt, format them into the correct matrices and then create the training data sets. The paintings are scraped from the WikiArt website by querying a URL via BeautifulSoup to attain an XML with the URLs for all the paintings of a certain artist. These URLs are then requested and the images at the web address are downloaded and stored in a directory “data” with subdirectories for each artist. These image files are then processed so they can be fed into the GAN. This requires all of the images being converted to the same format of having 3 matrices each with pixel values corresponding to the three Red, Green, and Blue channels. Additionally, we resize the images so they are uniformly 128x128 pixels. This ensures the model is able to take in all the images and process them without issue. Lastly, the training set is created by compiling all the resized and correctly formatted images. Optionally, the images can be sampled depending on the SAMPLE_SIZE or if it is large then it will sample all 538 images across the 10 artists.
 
 Model Creation/Training - [art_gan.py](https://github.com/ucsd-dsc-arts/dsc160-final-dsc160_final_group07/blob/master/code/art_gan.py)
+
 This python file contains all of the code necessary to create the discriminator and generator for the GAN as well as the training on the model on the dataset of images. The code also saves the results of certain epochs throughout the training. There are many parameters that can be set including how many preview images it will show in the saved images, the number of epochs, the batch size, the frequency of the saving of images, the dataset to train on, and a few others. The first step is building the discriminator which as stated earlier involves multiple 2D convolution layers coupled with a LeakyReLu layer as the activation function. The generator is then constructed which utilizes a similar procedure but with the variation of a 'tanh' activation function for the fully connected layer of the model. Lastly the image is then saved to an “output” folder so that the images can be viewed through the training process. For additional information, the procedure and code is based off [this](https://towardsdatascience.com/generating-modern-arts-using-generative-adversarial-network-gan-on-spell-39f67f83c7b4) Towards Data Science article.
 
 

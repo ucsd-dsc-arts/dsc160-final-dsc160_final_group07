@@ -140,8 +140,12 @@ We found this epoch to be particularly interesting due to the image produced in 
 
 #### Figure 4
 ![](results/all_dataset_3.png)
+
+Continuing with the theme of examining silhouette's in the generative artwork our model created we can see another figure in the 3rd column, 4th row of a person climbing a mountain with a bird or animal on top (right side). Additionally, in some of the other images we can see a dark blue sky (depicting the night sky) with a field in the image. The specific colors make the field look like it was used for farming and growing produce (which is represented by the greens, yellows, reds, and oranges). An example of this image can be found in the 3rd column, 2nd row.
+
 #### Figure 5
 ![](results/all_dataset_4.png)
+
 #### Figure 6
 ![](results/trained-294.png)
 

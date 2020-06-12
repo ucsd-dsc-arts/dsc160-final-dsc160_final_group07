@@ -146,8 +146,12 @@ Continuing with the theme of examining silhouette's in the generative artwork ou
 #### Figure 5
 ![](results/all_dataset_4.png)
 
+In the 5th column, 2nd row of this epoch we can observe a building like structure that is being hit by the sun during sunrise. Small black squares appear to be windows and the shading of yellow changes over the building which gives it the effect of sunshine rolling over the house/apartment. Moreover, in the 5th column, 1st row we can see another version of art that resembles a painting similar to Alma Woodsey Thomas’s artwork. These type of generation was not very prevalent in later epoch of generative artwork on traditional European artwork we observed but seemed to be a consistent theme throughout many of our epochs on our model. 
+
 #### Figure 6
 ![](results/trained-294.png)
+
+This last epoch does a good job at generalizing a consistent theme that we found in Aferican American generative artwork when juxtaposing it between traditional "unbiased" or rather European artwork. We decided to end our analysis on this image as it does a great job at conveying the most prominent difference we found when comparing our model and output ot others found online. The image in the 5th column, 1st row shows how vibrant and lively much of this generative art is; traditionally European generative artwork lacks much of the color pallet and "pop" that we found in our analysis. The colors are rather dull and faded in traditional "unbiased" generative artwork - by representing other cultures (specifically African American artwork) we can truly create generative art that is inclusive, accurate, and more colorful. 
 
 
 

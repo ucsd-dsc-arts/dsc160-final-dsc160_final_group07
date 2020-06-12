@@ -120,10 +120,12 @@ For our results we will be discussing and analysing a few of the images of the l
 
 We will first discuss two of the generative art samples that we obtained in the later samples of our small dataset. Both of these epochs fall within the range of 35,000 - 50,000 epochs. 
 
+#### Figure 1
 ![](results/small_dataset_1.png)
 
 In this first image we can see images that include a variety of vibrant colors. When juxtaposing the generative artwork in just the African American dataset this was perhaps the most stark difference. The use of bright colors that "pop" in the images truly set the images appart from traditional generative art examples we found online that included more European artworks. Additionally, we can see another type of image on a white/tan background with what appears to be figures of people standing still. The person on the left appears to be knelling with his arms extended outward and the person on the right appears to be examining something in the arms of the other person. In many of the artworks that we trained on, images of humans typically appeared in a similar style; these training images sometimes depicted figures with simple designs that appeared to be the focal point of the image. Moreover, the sharp contrast in bright colors would direct the viewers eye to these figures first. 
 
+#### Figure 2
 ![](results/small_dataset_2.png)
 
 In this second epoch we can see elements of an outside meadow (image in the upper left corner). The image depicts what appears to be a blue sky with a green grassy ground next to a brown cannon. This image to us resembled something that was more scenic and calm like some of the images we viewed in our training set. Additionally, the image in the 3rd column, 2nd row resembles a woven pattern similar to a quilt. This particular image appears to draw inspiration from some of Alma Woodsey Thomas’s artwork. Her artwork is very unique and uses a grid like structure with bright colors to paint various patterns and senes from nature. 
@@ -132,11 +134,15 @@ In this second epoch we can see elements of an outside meadow (image in the uppe
 
 We will now look at 4 of the examples we obtained from scalling up our model and running our full dataset onn 150,000 ephocs on a batch size of 64. These images come from the later ephocs rangin from 120,000 - 150,000 epochs. 
 
+#### Figure 3
 ![](results/all_dataset_1.png)
 We found this epoch to be particularly interesting due to the image produced in the 2nd column, 4th row. This image depicts what appears to be a face with two eyes, and ear, and hair around the head (bald on the top). Some of our group members interpreted this face looking over a city like structure while others believed that the part underneath the face was to be the mans shoulders. Additionally, the image in the 5th column and 1st row showed of some of the many bright colors we mentioned earlier. in addition to this, we began noticing a pattern of seeing solid color figures appear on a white/tan background with little noise. This was another difference that we began to notice in comparison to other forms of generative artwork trained on more European or "unbias" datasets. We often see figures appear in backgrounds that have more noise involved (such as trees, nature, etc.) in European generative art models - here we see very little of that. 
 
+#### Figure 4
 ![](results/all_dataset_3.png)
+#### Figure 5
 ![](results/all_dataset_4.png)
+#### Figure 6
 ![](results/trained-294.png)
 
 

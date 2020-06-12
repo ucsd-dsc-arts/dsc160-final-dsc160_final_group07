@@ -174,10 +174,7 @@ Further, we would like to analyze trends we see in the generative art of African
 
 ## Technical Notes and Dependencies
 
-Any implementation details or notes we need to repeat your work. 
-- Additional libraries you are using for this project
-- Does this code require other pip packages, software, etc?
-- Does this code need to run on some other (non-datahub) platform? (CoLab, etc.)
+`pip install spell` - We would recommend running our code on spell as it is optimized to handle our requirements and constraints nicely. Additionally, if you wish to run and test the code we would recommend changing the total number of epochs to a much smaller number and altering the batch size + training data size
 
 ## Reference
 

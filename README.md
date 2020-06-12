@@ -43,26 +43,29 @@ This is culturally important because African American artists are currently unde
 
 (10 points) 
 
-For our project we decided to use wikiart to get paintings of artists. We scraped paintings for 10 prominent African American artists. It was surprisingly difficuly to compile a dataset of paintings for some African American artists because wikiart did not have as in depth a repository for African American artists as they did for other white artists. We finally scraped 20 paintings for each of the following artists: 
-1) Jacob Lawrence
-2) Aaron Doughlas
-3) Clementine Hunter
-4) Jean-Michel Basquiat
-5) Kerry James Marshall
-6) Romare Bearden
-7) Alma Woodsey Thomas
-8) David Hammons
-9) Henry-Ossawa-Tanner
-10) William-H-Johnson
+For our project we decided to use wikiart to get paintings of artists. We scraped paintings for 10 prominent African American artists. It was surprisingly difficult to compile a dataset of paintings for some African American artists because wikiart did not have as in depth a repository for African American artists as they did for other white artists. This is one of the inherent basis that we were faced with when building our dataset; we were constrained to the artwork represented in wikiart with it being increasingly difficult to find various African American artists. We explored some of the most influential African American artists throughout history. Below are the ten artists that we chose (base on popularity, influence, and contribution) to create our dataset from. 
+Jacob Lawrence
+Aaron Doughlas
+Clementine Hunter
+Jean-Michel Basquiat
+Kerry James Marshall
+Romare Bearden
+Alma Woodsey Thomas
+David Hammons
+Henry-Ossawa-Tanner
+William-H-Johnson
+We used some of the techniques we learned in Exercise 1 to scrape and save all the images for each of the 10 artists we selected. We had a total of 538 pieces of artwork to train our model on; However, prior to training our model we had to ensure that all the images were the same size for when we fed them into our neural network. (*LIAM TALK ABOUT SIZING*)
 
-We had to ensure that all images scraped were of the same size and format in order to create our training set. 
+(TALK ABOUT STYLE GAN)
 
+To train our model on our dataset we made use of a platform known as Spell. Spell is a MLOps platform that is optimized for machine learning and deep learning. The servers and hardware are hosted by AWS which makes running our models both scalable and easy. Additionally, we wanted to use a service that would allow us have more variety for hardware specifications and was reliable. Our final model consisted of 150,000 epochs on a batch size of 64 across our entire dataset of 538 images; We ran our final model on a single V100 machine taking a little over 19 hours to complete. Below are 2 screenshots showing our epochs and machine usage. 
 
+(IMAGES GO HERE)
 
+The link to the spell platform we used for this project can be found [here](https://spell.run/?campaignid=2042784704&adgroupid=72961561115&adid=382130409573&gclid=EAIaIQobChMIu8zHmpn76QIV4iCtBh1jdQ2GEAAYASAAEgI1ZfD_BwE)
 
-
-
-
+*Note: Our group was able to obtain $95 of free credit on one of our accounts by referring the other members and having them sign up ($15 per referral for both parties). Additionally, we used a one time promo code to obtain $10 credit. This could be a potential alternative for next quarter for students who continue to have issues with the DSMLP servers. 
+A full gallery of some of the generative art we created can be found in the gallery section of our website [here](https://sites.google.com/view/racialbiasingenerativeart/art-gallery?authuser=0)
 
 
 In the final submission, this section will describe both the data you use for this project and any pre-existing models/neural nets. For each you should provide the name, a textual description, and a link. If there is a paper (for neural net) link that as well.

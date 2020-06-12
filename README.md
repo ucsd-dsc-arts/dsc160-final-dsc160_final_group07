@@ -176,6 +176,7 @@ After learning about and exposing the biases in generative art we believe it is 
 - Kevin Elkin - Worked with Liam to scrape images for our dataset, create our dataset and model, and run our model on 50,000 and 150,000 ephocs using spell. Wrote the results section, wrote beyond the classroom section, wrote part of the data and model section.
 - Karan Sunil - Wrote/Revised abstract and model creation + created part of data ingestion code. 
 - Liam McCarthy - Worked with Kevin to scrape images for our dataset, create our dataset and model, and run our model on 50,000 and 150,000 ephocs using spell. Wrote the methodology section found on the website, wrote the code section, wrote part of the data and model section.
+- Charul Sharma - Wrote the discussion section, wrote the mission section on the website 
 
 ## Technical Notes and Dependencies
 

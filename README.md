@@ -154,14 +154,6 @@ In the 5th column, 2nd row of this epoch we can observe a building like structur
 This last epoch does a good job at generalizing a consistent theme that we found in Aferican American generative artwork when juxtaposing it between traditional "unbiased" or rather European artwork. We decided to end our analysis on this image as it does a great job at conveying the most prominent difference we found when comparing our model and output ot others found online. The image in the 5th column, 1st row shows how vibrant and lively much of this generative art is; traditionally European generative artwork lacks much of the color pallet and "pop" that we found in our analysis. The colors are rather dull and faded in traditional "unbiased" generative artwork - by representing other cultures (specifically African American artwork) we can truly create generative art that is inclusive, accurate, and more colorful. 
 
 
-
-
-This section should summarize your results and will embed links to documentation to significant outputs. This should document both process and show artistic results. This can include figures, sound files, videos, bitmaps, as appropriate to your generative art idea. Each result should include a brief textual description, and all should be listed below: 
-
-- image files (`.jpg`, `.png` or whatever else is appropriate)
-- audio files (`.wav`, `.mp3`)
-- written text as `.pdf`
-
 ## Discussion
 
 (30 points, three to five paragraphs)

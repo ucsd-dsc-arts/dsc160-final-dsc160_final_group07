@@ -130,7 +130,6 @@ In this second epoch we can see elements of an outside meadow (image in the uppe
 ### Large Dataset
 
 ![](results/all_dataset_1.png)
-![](results/all_dataset_2.png)
 ![](results/all_dataset_3.png)
 ![](results/all_dataset_4.png)
 ![](results/trained-294.png)

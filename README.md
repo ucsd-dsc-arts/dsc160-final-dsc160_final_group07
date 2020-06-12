@@ -158,6 +158,8 @@ Further, we would like to analyze trends we see in the generative art of African
 ## Team Roles
 
 Umang Saraf - Created the website 
+Kevin Elkin - Worked with Liam to scrape,create, and run our model on 50,000 and 150,000 ephocs using spell. Wrote the results section and part of the data and model section
+Karan Sunil - Wrote/Revised abstract, wrote part of data ingestion code. 
 
 ## Technical Notes and Dependencies
 

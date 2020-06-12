@@ -158,7 +158,7 @@ Further, we would like to analyze trends we see in the generative art of African
 
 ## Team Roles
 
-Provide an account of individual members and their efforts/contributions to the specific tasks you accomplished.
+Umang Saraf - Created the website 
 
 ## Technical Notes and Dependencies
 

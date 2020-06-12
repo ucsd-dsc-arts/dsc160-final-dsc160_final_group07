@@ -143,20 +143,13 @@ This section should summarize your results and will embed links to documentation
 
 (30 points, three to five paragraphs)
 
-The first paragraph should be a short summary describing your results.
+While our results varied greatly, certain styles were clearly visible, such as Jacob Lawrence's cubism. Throughout, there were many bright colors in the generated art, with red, green, and yellow themes running throughout. As compared to analyses done of western art, such as in http://quasimondo.com/, there were far brighter colors, as well as fewer distiguishable figures/outlines.
 
-The subsequent paragraphs could address questions including:
-- Why is this culturally innovative?
-- How does your generative computational approach differ from traditional art/music/cultural production? 
-- How do your results relate to broader social, cultural, economic political, etc., issues? 
-- What are the ethical concerns for this form of generative art? 
+Our results relate to the current movement for black voices to be heard, and to the movement raising awareness for their suppression. Through these results, it is clear to see that more traditionally western generative art projects are VERY different than the results we produced, facilitating the realization that African artists and their styles have gone unseen in the generative art world.
 
-There are large ethical concerns with our project. This is a current and sensitive topic to people all around the world. 
+In the future we would like to include more African American artists' paintings to create generative art and more paintings per artist. Further, we would like to represent other less represented communities in the generative arts field as well like Hispanic and LatinX artist. Further, it would be interesting to include different forms of art like sculptures and other digital art, rather than just oil paintings from wikiart. This would make our dataset more diverse and allow us to generate better images. 
 
-- In what future directions could you expand this work?
-
-In the future we would like to include more African American artists paintings to create generative art and more paintings per artist. Further, we would like to represent other less represented communities in the generative arts field as well like Hispanic and LatinX artist. Further, it would be interesting to include different forms of art like scultures and other digital art, rather than just oil paintings from wikiart. This will make our dataset more diverse and allow us to generate better images. 
-Further, we would like to analyse trends we see in the generative art of African American artists and see if those similar trends exist in White artists. It will be interesting to see if white artists have similar trends in their artwork, but are better represented in museums etc. 
+Further, we would like to analyze trends we see in the generative art of African American artists and see if similar trends exist in White artists. It would be interesting to analyze whether white artists have similar trends in their artwork, but are better represented in museums etc.
 
 ## Team Roles
 

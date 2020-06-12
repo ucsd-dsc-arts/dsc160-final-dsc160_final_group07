@@ -62,8 +62,8 @@ In order to feed the information into a GAN, we needed to first get the various 
 
 To train our model on our dataset we made use of a platform known as Spell. Spell is a MLOps platform that is optimized for machine learning and deep learning. The servers and hardware are hosted by AWS which makes running our models both scalable and easy. Additionally, we wanted to use a service that would allow us have more variety for hardware specifications and was reliable. Our final model consisted of 150,000 epochs on a batch size of 64 across our entire dataset of 538 images; We ran our final model on a single V100 machine taking a little over 19 hours to complete. Below are 2 screenshots showing our epochs and machine usage. 
 
-![](report_images/machine.png)
-![](report_images/ephocs.png)
+![](report_images/Machine.png)
+![](report_images/Ephocs.png)
 
 The link to the spell platform we used for this project can be found [here](https://spell.run/?campaignid=2042784704&adgroupid=72961561115&adid=382130409573&gclid=EAIaIQobChMIu8zHmpn76QIV4iCtBh1jdQ2GEAAYASAAEgI1ZfD_BwE)
 
